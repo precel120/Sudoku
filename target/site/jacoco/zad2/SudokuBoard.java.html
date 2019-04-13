@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SudokuBoard.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Kompot</a> &gt; <a href="index.source.html" class="el_package">zad2</a> &gt; <span class="el_source">SudokuBoard.java</span></div><h1>SudokuBoard.java</h1><pre class="source lang-java linenums">package zad2;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
+public class SudokuBoard {
+    private int[][] board;
+
+<span class="nc" id="L11">    public SudokuBoard() {</span>
+<span class="nc" id="L12">        board = new int[9][9];</span>
+<span class="nc" id="L13">    }</span>
+
+    public int[][] getBoard() {
+        int[][] pom;
+<span class="nc" id="L17">        pom = board;</span>
+<span class="nc" id="L18">        return pom;</span>
+    }
+
+    public boolean checkBoard() {
+<span class="nc" id="L22">        int count1 = 0, count2 = 0, count3 = 0;</span>
+<span class="nc bnc" id="L23" title="All 2 branches missed.">        for (int k = 0; k &lt; 9; k++)</span>
+<span class="nc bnc" id="L24" title="All 2 branches missed.">            for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L25" title="All 2 branches missed.">                for (int j = 0; j &lt; 9; j++) {</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">                    if (i != j) {</span>
+<span class="nc bnc" id="L27" title="All 6 branches missed.">                        if (board[k][i] == board[k][j] || board[k][i] &lt; 0 || board[k][i] &gt; 10) count1++;</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">                        if (board[i][k] == board[j][k]) count2++;</span>
+                    }
+                }
+            }
+<span class="nc bnc" id="L32" title="All 2 branches missed.">        for (int i = 0; i &lt; 3; i++) {</span>
+<span class="nc bnc" id="L33" title="All 2 branches missed.">            for (int j = 0; j &lt; 3; j++) {</span>
+<span class="nc bnc" id="L34" title="All 2 branches missed.">                for (int k = 0; k &lt; 9; k++) {</span>
+<span class="nc bnc" id="L35" title="All 2 branches missed.">                    for (int l = k + 1; l &lt; 9; l++) {</span>
+<span class="nc bnc" id="L36" title="All 2 branches missed.">                        if (board[i * 3 + (l / 3)][j * 3 + (l % 3)] == board[i * 3 + (k / 3)][j * 3 + (k % 3)])</span>
+<span class="nc" id="L37">                            count3++;</span>
+                    }
+                }
+            }
+        }
+<span class="nc bnc" id="L42" title="All 6 branches missed.">        if (count1 == 0 &amp;&amp; count2 == 0 &amp;&amp; count3 == 0) return true;</span>
+<span class="nc" id="L43">        else return false;</span>
+    }
+
+    private boolean containsInRow(int row, int number) {
+<span class="nc bnc" id="L47" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L48" title="All 2 branches missed.">            if (board[row][i] == number) {</span>
+<span class="nc" id="L49">                return true;</span>
+            }
+        }
+<span class="nc" id="L52">        return false;</span>
+    }
+
+    private boolean containsInCol(int col, int number) {
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L57" title="All 2 branches missed.">            if (board[i][col] == number) {</span>
+<span class="nc" id="L58">                return true;</span>
+            }
+        }
+<span class="nc" id="L61">        return false;</span>
+    }
+
+    private boolean containsInBox(int row, int col, int number) {
+<span class="nc" id="L65">        int r = row - row % 3;</span>
+<span class="nc" id="L66">        int c = col - col % 3;</span>
+<span class="nc bnc" id="L67" title="All 2 branches missed.">        for (int i = r; i &lt; r + 3; i++) {</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">            for (int j = c; j &lt; c + 3; j++) {</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">                if (board[i][j] == number) {</span>
+<span class="nc" id="L70">                    return true;</span>
+                }
+            }
+        }
+<span class="nc" id="L74">        return false;</span>
+    }
+
+    public boolean checkBoard(int row, int col, int number) {
+<span class="nc bnc" id="L78" title="All 6 branches missed.">        return !(containsInRow(row, number) || containsInCol(col, number) || containsInBox(row, col, number));</span>
+    }
+
+    //Wypelnia cala plansze zerami i losuje pierwszy rzad
+    public void generateBoard() {
+<span class="nc bnc" id="L83" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L84" title="All 2 branches missed.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="nc" id="L85">                board[i][j] = 0;</span>
+            }
+        }
+<span class="nc" id="L88">        List&lt;Integer&gt; pom = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L89" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc" id="L90">            pom.add(i);</span>
+        }
+<span class="nc" id="L92">        Collections.shuffle(pom);</span>
+<span class="nc bnc" id="L93" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc" id="L94">            board[0][i] = pom.get(i) + 1;</span>
+        }
+<span class="nc" id="L96">    }</span>
+
+    public int get(int x, int y) {
+<span class="nc bnc" id="L99" title="All 8 branches missed.">        if (x &lt; 0 || x &gt; 9 || y &lt; 0 || y &gt; 9) throw new IllegalArgumentException(&quot;liczby poza zakresem&quot;);</span>
+<span class="nc bnc" id="L100" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L101" title="All 2 branches missed.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="nc bnc" id="L102" title="All 4 branches missed.">                if (i == x &amp;&amp; j == y) {</span>
+<span class="nc" id="L103">                    return board[i][j];</span>
+                }
+            }
+        }
+<span class="nc" id="L107">        return 0;</span>
+    }
+
+    public void set(int x, int y, int value) {
+<span class="nc bnc" id="L111" title="All 12 branches missed.">        if (x &lt; 0 || x &gt; 9 || y &lt; 0 || y &gt; 9 || value &gt; 9 || value &lt; 0)</span>
+<span class="nc" id="L112">            throw new IllegalArgumentException(&quot;liczby poza zakresem&quot;);</span>
+<span class="nc bnc" id="L113" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L114" title="All 2 branches missed.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="nc bnc" id="L115" title="All 4 branches missed.">                if (i == x &amp;&amp; j == y) {</span>
+<span class="nc" id="L116">                    board[i][j] = value;</span>
+                }
+            }
+        }
+<span class="nc" id="L120">    }</span>
+
+    public void printBoard() {
+<span class="nc bnc" id="L123" title="All 2 branches missed.">        for (int i = 0; i &lt; 9; i++) {</span>
+<span class="nc bnc" id="L124" title="All 2 branches missed.">            for (int j = 0; j &lt; 9; j++) {</span>
+<span class="nc" id="L125">                System.out.print(board[i][j] + &quot; &quot;);</span>
+            }
+<span class="nc" id="L127">            System.out.println();</span>
+        }
+<span class="nc" id="L129">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
