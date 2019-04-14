@@ -51,6 +51,7 @@ class SudokuBoxTest {
         }
     }
 
+
     @Test
     public void EqualsTest1() {
         for(int i=0; i<3; i++) {
@@ -82,6 +83,20 @@ class SudokuBoxTest {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    @Test
+    public void testToString(){
+        for(int i=0; i<3; i++) {
+            for(int j=0; j<3; j++)
+            {
+                SudokuBox box1= sudoku.getBox(i,j);
+                SudokuBox box2= sudoku.getBox(i,j);
+                Assertions.assertNotNull(box1.toString());
+                Assertions.assertNotNull(box2.toString());
+                Assertions.assertEquals(box1.toString(),box2.toString());
             }
         }
     }

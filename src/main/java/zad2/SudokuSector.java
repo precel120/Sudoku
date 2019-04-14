@@ -1,6 +1,5 @@
 package zad2;
 
-import java.util.Arrays;
 import java.lang.Object;
 import java.util.List;
 

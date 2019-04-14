@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 public class SudokuColumnTest {
 
@@ -80,6 +82,17 @@ public class SudokuColumnTest {
     }
 
     @Test
+    public void testToString(){
+        for(int i=0; i<9; i++) {
+            SudokuColumn col1= sudokuBoard.getColumn(i);
+            SudokuColumn col2= sudokuBoard.getColumn(i);
+            assertNotNull(col1.toString());
+            assertNotNull(col2.toString());
+            Assertions.assertEquals(col1.toString(),col2.toString());
+        }
+    }
+
+    @Test
     void verifyTest1() {
         for (int i = 0; i < 9; i++) {
             sudokuCol = sudokuBoard.getColumn(i);
@@ -104,4 +117,3 @@ public class SudokuColumnTest {
         }
     }
 }
-

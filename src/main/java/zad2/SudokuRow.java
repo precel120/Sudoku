@@ -6,5 +6,4 @@ public class SudokuRow extends SudokuSector {
     public SudokuRow(final List<SudokuField> sudokuField){
         super(sudokuField);
     }
-
 }

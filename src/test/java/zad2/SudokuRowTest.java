@@ -23,10 +23,10 @@ class SudokuRowTest {
 
     @Test
     public void EqualsTest1() {
-        for(int i=0; i<9; i++) {
-            SudokuRow row1= sudokuBoard.getRow(i);
-            SudokuRow row2= sudokuBoard.getRow(i);
-            Assertions.assertEquals(row1.hashCode(),row2.hashCode());
+        for (int i = 0; i < 9; i++) {
+            SudokuRow row1 = sudokuBoard.getRow(i);
+            SudokuRow row2 = sudokuBoard.getRow(i);
+            Assertions.assertEquals(row1.hashCode(), row2.hashCode());
             Assertions.assertTrue(row1.equals(row2));
             Assertions.assertTrue(row2.equals(row1));
         }
@@ -34,12 +34,11 @@ class SudokuRowTest {
 
     @Test
     public void EqualsTest2() {
-        for(int i=0; i<9; i++) {
-            for(int j=0; j<9; j++)
-            {
-                if(i!=j) {
-                    SudokuRow row1= sudokuBoard.getRow(i);
-                    SudokuRow row2= sudokuBoard.getRow(j);
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (i != j) {
+                    SudokuRow row1 = sudokuBoard.getRow(i);
+                    SudokuRow row2 = sudokuBoard.getRow(j);
                     Assertions.assertFalse(row1.equals(row2));
                     Assertions.assertFalse(row2.equals(row1));
                 }
@@ -49,24 +48,34 @@ class SudokuRowTest {
 
     @Test
     public void hashTest1() {
-        for(int i=0; i<9; i++) {
-            SudokuRow row1= sudokuBoard.getRow(i);
-            SudokuRow row2= sudokuBoard.getRow(i);
-            Assertions.assertEquals(row1.hashCode(),row2.hashCode());
+        for (int i = 0; i < 9; i++) {
+            SudokuRow row1 = sudokuBoard.getRow(i);
+            SudokuRow row2 = sudokuBoard.getRow(i);
+            Assertions.assertEquals(row1.hashCode(), row2.hashCode());
         }
     }
 
     @Test
     public void hashTest2() {
-        for(int i=0; i<9; i++) {
-            for(int j=0; j<9; j++)
-            {
-                if(i!=j) {
-                    SudokuRow row1= sudokuBoard.getRow(i);
-                    SudokuRow row2= sudokuBoard.getRow(j);
-                    Assertions.assertFalse(row1.hashCode()==row2.hashCode());
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (i != j) {
+                    SudokuRow row1 = sudokuBoard.getRow(i);
+                    SudokuRow row2 = sudokuBoard.getRow(j);
+                    Assertions.assertFalse(row1.hashCode() == row2.hashCode());
                 }
             }
+        }
+    }
+
+    @Test
+    public void testToString() {
+        for (int i = 0; i < 9; i++) {
+            SudokuRow row1 = sudokuBoard.getRow(i);
+            SudokuRow row2 = sudokuBoard.getRow(i);
+            Assertions.assertNotNull(row1.toString());
+            Assertions.assertNotNull(row2.toString());
+            Assertions.assertEquals(row1.toString(),row2.toString());
         }
     }
 

@@ -1,5 +1,6 @@
 package zad2;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
 import java.util.ArrayList;
@@ -12,19 +13,32 @@ public class SudokuBoard {
     private List<List<SudokuField>> board;
 
     public SudokuBoard(SudokuBoard sudoku) {
+        board = Arrays.asList(new List[9]);
+        for (int i = 0; i < 9; i++) {
+            board.set(i, Arrays.asList(new SudokuField[9]));
+        }
+        List<List<SudokuField>> tmp=sudoku.getBoard();
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                board.get(i).set(j, tmp.get(i).get(j));
+            }
+        }
         this.board=sudoku.board;
     }
 
     public SudokuBoard() {
         board = Arrays.asList(new List[9]);
-        for (int i = 0; i < board.size(); i++) {
+
+        for (int i = 0; i < 9; i++) {
             board.set(i, Arrays.asList(new SudokuField[9]));
         }
-        for (int i = 0; i < board.size(); i++) {
-            for (int j = 0; j < board.get(i).size(); j++) {
+
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
                 board.get(i).set(j, new SudokuField());
             }
         }
+
     }
 
     public List<List<SudokuField>> getBoard() {
@@ -153,16 +167,9 @@ public class SudokuBoard {
     }
 
     @Override
-    public String toString() {
-        return Objects.toStringHelper(this)
-                .add("", board)
-                .toString();
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof SudokuBoard)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         SudokuBoard that = (SudokuBoard) o;
         return Objects.equal(board, that.board);
     }
@@ -170,5 +177,12 @@ public class SudokuBoard {
     @Override
     public int hashCode() {
         return Objects.hashCode(board);
+    }
+
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("board", board)
+                .toString();
     }
 }

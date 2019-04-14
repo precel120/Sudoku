@@ -7,5 +7,4 @@ public class SudokuBox extends SudokuSector {
     public SudokuBox(final List<SudokuField> sudokuField){
         super(sudokuField);
     }
-
 }
