@@ -2,6 +2,8 @@ package zad2;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class SudokuField{
     private int value=0;
@@ -34,9 +36,8 @@ public class SudokuField{
     }
 
     @Override
-    public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .add("value", value)
-                .toString();
+    public String toString()
+    {
+        return new ToStringBuilder(this, ToStringStyle.SIMPLE_STYLE).append("Value",this.value).toString();
     }
 }

@@ -2,6 +2,8 @@ package zad2;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -181,8 +183,6 @@ public class SudokuBoard {
 
     @Override
     public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .add("board", board)
-                .toString();
+        return new ToStringBuilder(this, ToStringStyle.SIMPLE_STYLE).append("board", board).toString();
     }
 }

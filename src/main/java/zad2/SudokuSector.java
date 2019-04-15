@@ -4,6 +4,8 @@ import java.lang.Object;
 import java.util.List;
 
 import com.google.common.base.Objects;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class SudokuSector {
     private List<SudokuField> sudokuField;
@@ -33,8 +35,8 @@ public class SudokuSector {
     }
 
     @Override
-    public String toString() {
-        return Objects.toStringHelper(this).toString();
+    public String toString(){
+        return new ToStringBuilder(this, ToStringStyle.SIMPLE_STYLE).append("Fields",this.sudokuField).toString();
     }
 
     @Override
