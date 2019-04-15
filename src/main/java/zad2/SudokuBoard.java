@@ -5,13 +5,14 @@ import com.google.common.base.Objects;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 
-public class SudokuBoard {
+public class SudokuBoard implements Serializable {
     private List<List<SudokuField>> board;
 
     public SudokuBoard(SudokuBoard sudoku) {

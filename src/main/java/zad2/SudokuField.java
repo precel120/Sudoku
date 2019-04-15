@@ -5,7 +5,9 @@ import com.google.common.base.Objects;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-public class SudokuField{
+import java.io.Serializable;
+
+public class SudokuField implements Serializable {
     private int value=0;
 
     public SudokuField(int value) {
