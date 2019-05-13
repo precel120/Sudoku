@@ -1,8 +1,9 @@
 package zad2;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class SudokuColumn extends SudokuSector {
+public class SudokuColumn extends SudokuSector implements Serializable, Cloneable {
     public SudokuColumn(final List<SudokuField> sudokuField){
         super(sudokuField);
     }

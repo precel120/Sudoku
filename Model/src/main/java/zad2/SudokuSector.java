@@ -1,5 +1,6 @@
 package zad2;
 
+import java.io.Serializable;
 import java.lang.Object;
 import java.util.List;
 
@@ -7,7 +8,7 @@ import com.google.common.base.Objects;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-public class SudokuSector {
+public class SudokuSector implements Serializable, Cloneable {
     private List<SudokuField> sudokuField;
 
     public SudokuSector(final List<SudokuField> sudokuField) {
@@ -50,5 +51,10 @@ public class SudokuSector {
         if (o == null || getClass() != o.getClass()) return false;
         SudokuSector that = (SudokuSector) o;
         return Objects.equal(sudokuField, that.sudokuField);
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

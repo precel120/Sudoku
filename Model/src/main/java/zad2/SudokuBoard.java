@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-public class SudokuBoard implements Serializable {
+public class SudokuBoard implements Serializable, Cloneable {
     private List<List<SudokuField>> board;
 
     public SudokuBoard(SudokuBoard sudoku) {

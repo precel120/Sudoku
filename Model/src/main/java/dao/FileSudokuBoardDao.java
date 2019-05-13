@@ -17,34 +17,27 @@ public class FileSudokuBoardDao implements Dao<SudokuBoard> {
 
     @Override
     public void write(SudokuBoard sudokuBoard) {
-        ObjectOutputStream objectOutputStream = null;
-        try {
-            objectOutputStream = new ObjectOutputStream(new FileOutputStream(fileName));
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(fileName))) {
             objectOutputStream.writeObject(sudokuBoard);
             objectOutputStream.flush();
-            objectOutputStream.close();
         } catch (IOException ioe) {
-            System.out.print("ioe nie trybi");
+            System.out.print("IOE nie dziala");
         }
     }
 
     @Override
     public SudokuBoard read(){
-        ObjectInputStream objectInputStream = null;
-        SudokuBoard sudokuBoard = null;
-        try {
-            objectInputStream = new ObjectInputStream(new FileInputStream(fileName));
-            sudokuBoard = (SudokuBoard) objectInputStream.readObject();
-            objectInputStream.close();
+        try(ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(fileName))) {
+            SudokuBoard sudokuBoard = (SudokuBoard) objectInputStream.readObject();
             return sudokuBoard;
         } catch (EOFException ex) {
             System.out.print("Koniec pliku");
         }catch (IOException ioe){
-            System.out.print("ioe nie bangla");
+            System.out.print("IOE exception");
         }catch (ClassNotFoundException cnfe){
-            System.out.print("kurcze kurcze");
+            System.out.print("Class not found");
         }
-        throw new NullPointerException("faken zapisz to");
+        throw new NullPointerException("Null ptr exception");
     }
 
     @Override
