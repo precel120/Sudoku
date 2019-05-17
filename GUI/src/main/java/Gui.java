@@ -18,7 +18,6 @@ public class Gui extends Application {
         StackPane stackPane = fxmlLoader.load();
         Scene scene = new Scene(stackPane,600,400);
 
-
         primaryStage.setScene(scene);
         primaryStage.show();
     }

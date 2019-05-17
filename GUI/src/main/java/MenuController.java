@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class MenuController {
 
-    private SudokuBoard sudokuBoard = new SudokuBoard();
+    private static SudokuBoard sudokuBoard = new SudokuBoard();
     private MainController  mainController;
 
     public void setMainController(MainController mainController) {
@@ -21,6 +21,9 @@ public class MenuController {
         sudokuSolver.solve(sudokuBoard);
     }
 
+    public static SudokuBoard getSudokuBoard() {
+        return sudokuBoard;
+    }
 
     @FXML
     public void easy() {
