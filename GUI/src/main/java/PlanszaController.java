@@ -14,6 +14,10 @@ public class PlanszaController {
             for (int j = 0; j < 9; j++) {
                 TextField textField = new TextField();
                 textField.setText(Integer.toString(sudokuBoard.get(i,j)));
+                if(textField.getText().equals("0")){
+                    textField.clear();
+                    textField.setText(" ");
+                }
                 this.gridPane.add(textField,i,j);
             }
         }
