@@ -1,14 +1,17 @@
+import dao.FileSudokuBoardDao;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 import zad2.*;
 
 import java.io.IOException;
+import java.util.Locale;
 import java.util.Random;
+import java.util.ResourceBundle;
 
 public class MenuController {
 
-    private static SudokuBoard sudokuBoard = new SudokuBoard();
+    private static SudokuBoard sudokuBoard;
     private MainController  mainController;
 
     public void setMainController(MainController mainController) {
@@ -16,6 +19,7 @@ public class MenuController {
     }
 
     private void gBoard() {
+        sudokuBoard=new SudokuBoard();
         SudokuSolver sudokuSolver = new BacktrackingSudokuSolver();
         sudokuBoard.generateBoard();
         sudokuSolver.solve(sudokuBoard);
@@ -98,5 +102,22 @@ public class MenuController {
             e.printStackTrace();
         }
         mainController.setScreen(pane);
+    }
+
+    @FXML
+    public void wczytaj(){
+        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("gra.bin");
+        sudokuBoard = fileSudokuBoardDao.read();
+
+    }
+
+    @FXML
+    public void eng(){
+        Locale.setDefault(new Locale("en"));
+    }
+
+    @FXML
+    public void pl(){
+        Locale.setDefault(new Locale("pl"));
     }
 }

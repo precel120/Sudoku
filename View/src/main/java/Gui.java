@@ -1,10 +1,11 @@
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class Gui extends Application {
 
@@ -17,7 +18,6 @@ public class Gui extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("glowny.fxml"));
         StackPane stackPane = fxmlLoader.load();
         Scene scene = new Scene(stackPane,600,400);
-
         primaryStage.setScene(scene);
         primaryStage.show();
     }
