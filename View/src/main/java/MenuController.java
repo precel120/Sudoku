@@ -1,7 +1,9 @@
 import dao.FileSudokuBoardDao;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import zad2.*;
 
 import java.io.IOException;
@@ -11,15 +13,10 @@ import java.util.ResourceBundle;
 
 public class MenuController {
 
-    private static SudokuBoard sudokuBoard;
-    private MainController  mainController;
-
-    public void setMainController(MainController mainController) {
-        this.mainController = mainController;
-    }
+    private static SudokuBoard sudokuBoard = new SudokuBoard();
+    public static int lang;
 
     private void gBoard() {
-        sudokuBoard=new SudokuBoard();
         SudokuSolver sudokuSolver = new BacktrackingSudokuSolver();
         sudokuBoard.generateBoard();
         sudokuSolver.solve(sudokuBoard);
@@ -94,30 +91,37 @@ public class MenuController {
 
     @FXML
     public void startGame(){
-        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("plansza.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/plansza.fxml"));
+        if(lang==1){
+            fxmlLoader.setResources(ResourceBundle.getBundle("bundles.language_eng"));
+        }else{
+            fxmlLoader.setResources(ResourceBundle.getBundle("bundles.language_pl"));
+        }
         Pane pane = null;
         try {
             pane = fxmlLoader.load();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        mainController.setScreen(pane);
+        Scene scene = new Scene(pane);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
     public void wczytaj(){
         FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("gra.bin");
         sudokuBoard = fileSudokuBoardDao.read();
-
     }
 
     @FXML
     public void eng(){
-        Locale.setDefault(new Locale("en"));
+        lang=1;
     }
 
     @FXML
     public void pl(){
-        Locale.setDefault(new Locale("pl"));
+        lang=0;
     }
 }

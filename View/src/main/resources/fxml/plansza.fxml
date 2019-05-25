@@ -32,7 +32,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <Button layoutX="62.0" layoutY="357.0" mnemonicParsing="false" onAction="#zapisz" text="%save" />
-      <Button layoutX="261.0" layoutY="353.0" mnemonicParsing="false" onAction="#sprawdz" prefHeight="33.0" prefWidth="79.0" text="%check" />
+      <Button layoutX="54.0" layoutY="346.0" mnemonicParsing="false" onAction="#zapisz" text="%save" />
+      <Button layoutX="274.0" layoutY="346.0" mnemonicParsing="false" onAction="#sprawdz" text="%check" />
    </children>
 </AnchorPane>
