@@ -7,4 +7,9 @@ public class SudokuColumn extends SudokuSector implements Serializable, Cloneabl
     public SudokuColumn(final List<SudokuField> sudokuField){
         super(sudokuField);
     }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
