@@ -12,14 +12,14 @@
       <Button layoutX="81.0" layoutY="122.0" mnemonicParsing="false" onAction="#easy" prefHeight="56.0" prefWidth="98.0" text="%easy" />
       <Button layoutX="251.0" layoutY="122.0" mnemonicParsing="false" onAction="#medium" prefHeight="56.0" prefWidth="98.0" text="%medium" />
       <Button layoutX="433.0" layoutY="122.0" mnemonicParsing="false" onAction="#hard" prefHeight="56.0" prefWidth="98.0" text="%hard" />
-      <Button layoutX="217.0" layoutY="252.0" mnemonicParsing="false" onAction="#startGame" prefHeight="88.0" prefWidth="167.0" text="%start" />
+      <Button layoutX="224.0" layoutY="252.0" mnemonicParsing="false" onAction="#startGame" prefHeight="88.0" prefWidth="167.0" text="%start" />
       <Text layoutX="256.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%entryText">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
-      <Button layoutX="482.0" layoutY="315.0" mnemonicParsing="false" onAction="#wczytaj" text="%load" />
-      <MenuButton layoutX="457.0" layoutY="52.0" mnemonicParsing="false" text="%lang">
+      <Button layoutX="455.0" layoutY="272.0" mnemonicParsing="false" onAction="#wczytaj" prefHeight="48.0" prefWidth="76.0" text="%load" />
+      <MenuButton layoutX="466.0" layoutY="52.0" mnemonicParsing="false" text="%lang">
         <items>
           <MenuItem mnemonicParsing="false" onAction="#pl" text="PL" />
           <MenuItem mnemonicParsing="false" onAction="#eng" text="ENG" />

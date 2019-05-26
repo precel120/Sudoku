@@ -16,7 +16,7 @@ public class PlanszaController {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 TextField textField = new TextField();
-                textField.setText(Integer.toString(sudokuBoard.get(i,j)));
+                textField.setText(Integer.toString(sudokuBoard.get(j,i)));
                 if(textField.getText().equals("0")){
                     textField.clear();
                     textField.setText(" ");
@@ -25,6 +25,7 @@ public class PlanszaController {
             }
         }
     }
+
     @FXML
     public void zapisz(){
         FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("gra.bin");

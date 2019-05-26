@@ -1,4 +1,5 @@
 import dao.FileSudokuBoardDao;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -7,14 +8,14 @@ import javafx.stage.Stage;
 import zad2.*;
 
 import java.io.IOException;
+import java.util.ListResourceBundle;
 import java.util.Locale;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-public class MenuController {
+public class MenuController{
 
     private static SudokuBoard sudokuBoard = new SudokuBoard();
-    public static int lang;
 
     private void gBoard() {
         SudokuSolver sudokuSolver = new BacktrackingSudokuSolver();
@@ -92,11 +93,7 @@ public class MenuController {
     @FXML
     public void startGame(){
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/plansza.fxml"));
-        if(lang==1){
-            fxmlLoader.setResources(ResourceBundle.getBundle("bundles.language_eng"));
-        }else{
-            fxmlLoader.setResources(ResourceBundle.getBundle("bundles.language_pl"));
-        }
+        fxmlLoader.setResources(ResourceBundle.getBundle("bundles.lang"));
         Pane pane = null;
         try {
             pane = fxmlLoader.load();
@@ -117,11 +114,15 @@ public class MenuController {
 
     @FXML
     public void eng(){
-        lang=1;
+        Gui gui = new Gui();
+        Locale.setDefault(new Locale("eng"));
+        gui.loadMenu();
     }
 
     @FXML
     public void pl(){
-        lang=0;
+        Gui gui = new Gui();
+        Locale.setDefault(new Locale("pl"));
+        gui.loadMenu();
     }
 }
