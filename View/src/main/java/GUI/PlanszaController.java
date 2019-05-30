@@ -14,7 +14,6 @@ import java.util.ResourceBundle;
 
 public class PlanszaController {
     private SudokuBoard sudokuBoard;
-
     @FXML
     private GridPane gridPane;
 
@@ -47,25 +46,32 @@ public class PlanszaController {
         int x, y, var;
         TextField value;
         String tmp;
+        boolean sentry=false;
 
         for (Node node : childrens) {
             value = (TextField) node;
             x = gridPane.getRowIndex(node);
             y = gridPane.getColumnIndex(node);
             tmp = value.getText().trim();
-            if (tmp.equals("")) var = 0;
-            else var = Integer.parseInt(tmp);
+            //if ((tmp.matches("[1-9]"))) var = Integer.parseInt(tmp);
+             if (tmp.equals("") || tmp.equals(" ")) var = 0;
+            else {
+                 var = Integer.parseInt(tmp);
+                //var = 0;
+                //sentry=true;
+
+            }
             sudokuBoard.set(x, y, var);
         }
-
+        if(sentry) alertValue();
         if (sudokuBoard.checkBoard() && !findZero(sudokuBoard)) alertPositive();
         else alertNegative();
     }
 
     private void alertPositive() {
         ResourceBundle bundle;
-        if(Locale.getDefault().toString().equals("eng")) bundle = ResourceBundle.getBundle("bundles.language_eng");
-        else bundle = ResourceBundle.getBundle("bundles.language_pl");
+        if (Locale.getDefault().toString().equals("en")) bundle = ResourceBundle.getBundle("bundles.lang");
+        else bundle = ResourceBundle.getBundle("bundles.lang_pl");
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("SUDOKU INFO");
         alert.setHeaderText(null);
@@ -75,12 +81,23 @@ public class PlanszaController {
 
     private void alertNegative() {
         ResourceBundle bundle;
-        if(Locale.getDefault().toString().equals("eng")) bundle = ResourceBundle.getBundle("bundles.language_eng");
-        else bundle = ResourceBundle.getBundle("bundles.language_pl");
+        if (Locale.getDefault().toString().equals("en")) bundle = ResourceBundle.getBundle("bundles.lang");
+        else bundle = ResourceBundle.getBundle("bundles.lang_pl");
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("SUDOKU INFO");
         alert.setHeaderText(null);
         alert.setContentText(bundle.getString("alertNegative"));
+        alert.showAndWait();
+    }
+
+    private void alertValue() {
+        ResourceBundle bundle;
+        if (Locale.getDefault().toString().equals("en")) bundle = ResourceBundle.getBundle("bundles.lang");
+        else bundle = ResourceBundle.getBundle("bundles.lang_pl");
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("SUDOKU INFO");
+        alert.setHeaderText(null);
+        alert.setContentText(bundle.getString("alertValue"));
         alert.showAndWait();
     }
 

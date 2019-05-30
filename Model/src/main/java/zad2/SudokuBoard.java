@@ -158,14 +158,12 @@ public class SudokuBoard implements Serializable, Cloneable {
     }
 
     public SudokuBox getBox(int row, int col) {
-        ///row=row/3;
-        //col=col/3;
-        if(row>9 || row<0 ||col>9||col<0) throw new IllegalArgumentException("liczby poza zakresem");
+        if(row>2||row<0||col>2||col<0) throw new IllegalArgumentException("liczby poza zakresem");
         List<SudokuField> box = Arrays.asList(new SudokuField[9]);
         int index = 0;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                //box.set(index++, board.get(row * 3 + i).get(col * 3 + j));
+               // box.set(index++, board.get(row * 3 + i).get(col * 3 + j));
             }
         }
         return new SudokuBox(box);

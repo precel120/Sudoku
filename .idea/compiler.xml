@@ -13,7 +13,7 @@
     <bytecodeTargetLevel>
       <module name="ModelProject" target="8" />
       <module name="SudokuGameProject" target="1.5" />
-      <module name="View" target="8" />
+      <module name="View" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

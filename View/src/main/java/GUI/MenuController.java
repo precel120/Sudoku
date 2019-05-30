@@ -14,10 +14,9 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-public class MenuController {
+public class MenuController{
 
     private static SudokuBoard sudokuBoard = new SudokuBoard();
-    public static int lang;
 
     private void gBoard() {
         SudokuSolver sudokuSolver = new BacktrackingSudokuSolver();
@@ -95,11 +94,7 @@ public class MenuController {
     @FXML
     public void startGame(){
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/plansza.fxml"));
-        if(lang==1){
-            fxmlLoader.setResources(ResourceBundle.getBundle("bundles.language_eng"));
-        }else{
-            fxmlLoader.setResources(ResourceBundle.getBundle("bundles.language_pl"));
-        }
+        fxmlLoader.setResources(ResourceBundle.getBundle("bundles.lang"));
         Pane pane = null;
         try {
             pane = fxmlLoader.load();
@@ -113,6 +108,12 @@ public class MenuController {
     }
 
     @FXML
+    public void wczytaj(){
+        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("gra.bin");
+        sudokuBoard = fileSudokuBoardDao.read();
+    }
+
+    @FXML
     public void authors() {
         ResourceBundle bundle = ResourceBundle.getBundle("resources.LRB");
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -122,20 +123,29 @@ public class MenuController {
     }
 
     @FXML
-    public void wczytaj(){
-        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("gra.bin");
-        sudokuBoard = fileSudokuBoardDao.read();
-    }
-
-    @FXML
     public void eng(){
-        lang=1;
-        Locale.setDefault(new Locale("eng"));
+        Locale.setDefault(new Locale("en"));
+        loadMenu();
     }
 
     @FXML
     public void pl(){
-        lang=0;
         Locale.setDefault(new Locale("pl"));
+        loadMenu();
+    }
+
+    public void loadMenu(){
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/MenuScreen.fxml"));
+        fxmlLoader.setResources(ResourceBundle.getBundle("bundles.lang"));
+        Pane pane = null;
+        try {
+            pane = fxmlLoader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(pane);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
     }
 }
