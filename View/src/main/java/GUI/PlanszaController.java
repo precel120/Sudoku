@@ -1,6 +1,7 @@
 package GUI;
 
 import dao.FileSudokuBoardDao;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
@@ -108,5 +109,10 @@ public class PlanszaController {
             }
         }
         return false;
+    }
+
+    @FXML
+    public void exit(){
+        Platform.exit();
     }
 }

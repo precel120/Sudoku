@@ -192,8 +192,9 @@ class SudokuBoardTest {
     @Test
     public void checkCheckBoard() {
         SudokuBoard sudoku3=new SudokuBoard();
+        sudoku3.generateBoard();
         SudokuSolver solver=new BacktrackingSudokuSolver();
-        Assertions.assertFalse(sudoku3.checkBoard());
         solver.solve(sudoku3);
+        Assertions.assertTrue(sudoku3.checkBoard());
     }
 }
