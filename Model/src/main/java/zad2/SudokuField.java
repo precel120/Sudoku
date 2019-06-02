@@ -1,16 +1,20 @@
 package zad2;
 
 import com.google.common.base.Objects;
+import exceptions.SudokuFieldException;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.io.Serializable;
 import java.util.Comparator;
+import java.util.ResourceBundle;
 
 public class SudokuField implements Serializable, Comparable<SudokuField>, Cloneable {
     private int value = 0;
 
     public SudokuField(int value) {
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel_pl");
+        if(value>9||value<0) throw new SudokuFieldException(resourceBundle.getString("argument"));
         this.value = value;
     }
 
@@ -22,6 +26,8 @@ public class SudokuField implements Serializable, Comparable<SudokuField>, Clone
     }
 
     public void setFieldValue(int value) {
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel_pl");
+        if(value>9||value<0) throw new SudokuFieldException(resourceBundle.getString("argument"));
         this.value = value;
     }
 

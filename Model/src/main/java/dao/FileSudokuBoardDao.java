@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 
 public class FileSudokuBoardDao implements Dao<SudokuBoard> {
     private String fileName;
-    private ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel");
+    private ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel_pl");
 
     public FileSudokuBoardDao(String fileName) {
         this.fileName = fileName;
@@ -43,7 +43,7 @@ public class FileSudokuBoardDao implements Dao<SudokuBoard> {
             System.out.print(resourceBundle.getObject("klass"));
             cnfe.getCause();
         }
-        throw new NullPointerException("Null ptr exception");
+        throw new NullPointerException(resourceBundle.getString("nullPointer"));
     }
 
     @Override

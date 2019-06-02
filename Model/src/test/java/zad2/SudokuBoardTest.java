@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class SudokuBoardTest {
-
+    ResourceBundle resourceBundle;
     SudokuBoard sudokuBoard;
     SudokuBoard sudokuBoard2;
     SudokuBoard sudokuBoard3;
@@ -23,6 +23,7 @@ class SudokuBoardTest {
 
     @BeforeEach
     public void boards() {
+        resourceBundle = ResourceBundle.getBundle("langModel_pl");
         sudokuBoard = new SudokuBoard();
         sudokuBoard2 = new SudokuBoard();
         sudokuBoard3 = new SudokuBoard();
@@ -125,21 +126,21 @@ class SudokuBoardTest {
     public void checkGet1() {
         SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.get(-1,-2));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
     public void checkGet2() {
         SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.get(9,-2));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
     public void checkGet3() {
         SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.get(20,10));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
@@ -170,7 +171,7 @@ class SudokuBoardTest {
         sudokuBoard.generateBoard();
         SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.set(0,5,-10));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
         Assertions.assertFalse(sudokuBoard.get(0,5)== -10);
     }
 
@@ -179,7 +180,7 @@ class SudokuBoardTest {
         sudokuBoard.generateBoard();
         SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.set(-20,5,-10));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
@@ -187,7 +188,7 @@ class SudokuBoardTest {
         sudokuBoard.generateBoard();
         SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.set(10,5,1));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
