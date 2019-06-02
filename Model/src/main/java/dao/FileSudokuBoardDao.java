@@ -3,9 +3,12 @@ package dao;
 import zad2.SudokuBoard;
 
 import java.io.*;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class FileSudokuBoardDao implements Dao<SudokuBoard> {
     private String fileName;
+    private ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel");
 
     public FileSudokuBoardDao(String fileName) {
         this.fileName = fileName;
@@ -21,7 +24,8 @@ public class FileSudokuBoardDao implements Dao<SudokuBoard> {
             objectOutputStream.writeObject(sudokuBoard);
             objectOutputStream.flush();
         } catch (IOException ioe) {
-            System.out.print("IOE nie dziala");
+            System.out.print(resourceBundle.getObject("ioe"));
+            ioe.getCause();
         }
     }
 
@@ -31,11 +35,14 @@ public class FileSudokuBoardDao implements Dao<SudokuBoard> {
             SudokuBoard sudokuBoard = (SudokuBoard) objectInputStream.readObject();
             return sudokuBoard;
         } catch (EOFException ex) {
-            System.out.print("Koniec pliku");
+            System.out.print(resourceBundle.getObject("endFile"));
+            ex.getCause();
         }catch (IOException ioe){
-            System.out.print("IOE exception");
+            System.out.print(resourceBundle.getObject("ioe"));
+            ioe.getCause();
         }catch (ClassNotFoundException cnfe){
-            System.out.print("Class not found");
+            System.out.print(resourceBundle.getObject("klass"));
+            cnfe.getCause();
         }
         throw new NullPointerException("Null ptr exception");
     }
