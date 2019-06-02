@@ -1,11 +1,13 @@
 package GUI;
 
 import dao.FileSudokuBoardDao;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import org.apache.log4j.Logger;
 import zad2.SudokuBoard;
 
 import java.util.List;
@@ -14,6 +16,9 @@ import java.util.ResourceBundle;
 
 public class PlanszaController {
     private SudokuBoard sudokuBoard;
+    final static Logger logger = Logger.getLogger(PlanszaController.class);
+    private ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
+
     @FXML
     private GridPane gridPane;
 
@@ -37,11 +42,11 @@ public class PlanszaController {
     public void zapisz() {
         FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("gra.bin");
         fileSudokuBoardDao.write(sudokuBoard);
+        //logger.info(bundle.getString("saved"));
     }
 
     @FXML
     public void sprawdz() {
-        sudokuBoard = MenuController.getSudokuBoard();
         List<Node> childrens = gridPane.getChildren();
         int x, y, var;
         TextField value;
@@ -64,8 +69,13 @@ public class PlanszaController {
             sudokuBoard.set(x, y, var);
         }
         if(sentry) alertValue();
-        if (sudokuBoard.checkBoard() && !findZero(sudokuBoard)) alertPositive();
-        else alertNegative();
+        if (sudokuBoard.checkBoard() && !findZero(sudokuBoard)) {
+            alertPositive();
+            logger.info(bundle.getString("gameOver"));
+        } else {
+            alertNegative();
+            logger.info(bundle.getString("attempt"));
+        }
     }
 
     private void alertPositive() {
@@ -108,5 +118,11 @@ public class PlanszaController {
             }
         }
         return false;
+    }
+
+    @FXML
+    public void exit(){
+        logger.info(bundle.getString("gameFinished"));
+        Platform.exit();
     }
 }

@@ -7,14 +7,18 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import zad2.*;
+import org.apache.log4j.Logger;
+import zad2.BacktrackingSudokuSolver;
+import zad2.SudokuBoard;
+import zad2.SudokuSolver;
 
 import java.io.IOException;
 import java.util.Locale;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-public class MenuController{
+
+public class MenuController  {
 
     private static SudokuBoard sudokuBoard = new SudokuBoard();
 
@@ -27,6 +31,8 @@ public class MenuController{
     public static SudokuBoard getSudokuBoard() {
         return sudokuBoard;
     }
+
+    final static Logger logger = Logger.getLogger(MenuController.class);
 
     @FXML
     public void easy() {
@@ -47,6 +53,8 @@ public class MenuController{
                 }
             }
         }
+        ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
+        logger.info(bundle.getString("startEasy"));
     }
 
     @FXML
@@ -68,6 +76,8 @@ public class MenuController{
                 }
             }
         }
+        ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
+        logger.info(bundle.getString("startMedium"));
     }
 
     @FXML
@@ -89,22 +99,27 @@ public class MenuController{
                 }
             }
         }
+        ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
+        logger.info(bundle.getString("startHard"));
     }
 
     @FXML
-    public void startGame(){
+    public void startGame() {
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/plansza.fxml"));
+        ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
         fxmlLoader.setResources(ResourceBundle.getBundle("bundles.lang"));
         Pane pane = null;
         try {
             pane = fxmlLoader.load();
         } catch (IOException e) {
+            logger.error(bundle.getString("ioe"), e);
             e.printStackTrace();
         }
         Scene scene = new Scene(pane);
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.show();
+        logger.info(bundle.getString("started"));
     }
 
     @FXML
@@ -125,27 +140,35 @@ public class MenuController{
     @FXML
     public void eng(){
         Locale.setDefault(new Locale("en"));
+        ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
+        logger.info(bundle.getString("languageChanged"));
         loadMenu();
     }
 
     @FXML
     public void pl(){
         Locale.setDefault(new Locale("pl"));
+        ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
+        logger.info(bundle.getString("languageChanged"));
         loadMenu();
     }
 
     public void loadMenu(){
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/MenuScreen.fxml"));
         fxmlLoader.setResources(ResourceBundle.getBundle("bundles.lang"));
+        ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
         Pane pane = null;
         try {
             pane = fxmlLoader.load();
         } catch (IOException e) {
+            logger.fatal(bundle.getString("ioe"), e);
             e.printStackTrace();
         }
         Scene scene = new Scene(pane);
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.show();
+        logger.debug(bundle.getString("menuLoaded"));
+
     }
 }

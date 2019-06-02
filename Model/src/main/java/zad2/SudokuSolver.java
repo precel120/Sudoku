@@ -1,5 +1,5 @@
 package zad2;
 
 public interface SudokuSolver {
-    public boolean solve(SudokuBoard sudokuBoard);
+    boolean solve(SudokuBoard sudokuBoard);
 }

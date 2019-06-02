@@ -1,27 +1,29 @@
 package zad2;
 
+import exceptions.SudokuBoardException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.Assert;
 
 import java.util.List;
+import java.util.ResourceBundle;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class SudokuBoardTest {
-
+    ResourceBundle resourceBundle;
     SudokuBoard sudokuBoard;
     SudokuBoard sudokuBoard2;
     SudokuBoard sudokuBoard3;
     SudokuBoard sudokuBoard4;
-
     SudokuSolver solver = new BacktrackingSudokuSolver();
 
     @BeforeEach
     public void boards() {
+        resourceBundle = ResourceBundle.getBundle("langModel_pl");
         sudokuBoard = new SudokuBoard();
         sudokuBoard2 = new SudokuBoard();
         sudokuBoard3 = new SudokuBoard();
@@ -122,23 +124,23 @@ class SudokuBoardTest {
 
     @Test
     public void checkGet1() {
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+        SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.get(-1,-2));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
     public void checkGet2() {
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+        SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.get(9,-2));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
     public void checkGet3() {
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+        SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.get(20,10));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
@@ -167,33 +169,34 @@ class SudokuBoardTest {
     @Test
     public void checkSet3() {
         sudokuBoard.generateBoard();
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+        SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.set(0,5,-10));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
         Assertions.assertFalse(sudokuBoard.get(0,5)== -10);
     }
 
     @Test
     public void checkSet4() {
         sudokuBoard.generateBoard();
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+        SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.set(-20,5,-10));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
     public void checkSet5() {
         sudokuBoard.generateBoard();
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class,
+        SudokuBoardException thrown = assertThrows(SudokuBoardException.class,
                 ()->sudokuBoard.set(10,5,1));
-        Assert.assertTrue(thrown.getMessage().contains("liczby poza zakresem"));
+        Assert.assertTrue(thrown.getMessage().contains(resourceBundle.getString("oob")));
     }
 
     @Test
     public void checkCheckBoard() {
         SudokuBoard sudoku3=new SudokuBoard();
+        sudoku3.generateBoard();
         SudokuSolver solver=new BacktrackingSudokuSolver();
-        Assertions.assertFalse(sudoku3.checkBoard());
         solver.solve(sudoku3);
+        Assertions.assertTrue(sudoku3.checkBoard());
     }
 }

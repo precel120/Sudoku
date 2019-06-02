@@ -1,20 +1,39 @@
 package zad2;
 
 import com.google.common.base.Objects;
+import dao.FileSudokuBoardDao;
+import exceptions.SudokuFieldException;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.apache.log4j.Logger;
 
 import java.io.Serializable;
 import java.util.Comparator;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class SudokuField implements Serializable, Comparable<SudokuField>, Cloneable {
     private int value = 0;
-
+    //private ResourceBundle resourceBundle;
+    private static Logger logger = Logger.getLogger(FileSudokuBoardDao.class);
+/*
+    private void setLocale() {
+        if (Locale.getDefault().toString().equals("en")) resourceBundle = ResourceBundle.getBundle("langModel");
+        else resourceBundle = ResourceBundle.getBundle("langModel_pl");
+    }
+*/
     public SudokuField(int value) {
+       // setLocale();
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel_pl");
+        if (value > 9 || value < 0) {
+            logger.error(resourceBundle.getString("argument"));
+            throw new SudokuFieldException(resourceBundle.getString("argument"));
+        }
         this.value = value;
     }
 
     public SudokuField() {
+        //setLocale();
     }
 
     public int getFieldValue() {
@@ -22,6 +41,11 @@ public class SudokuField implements Serializable, Comparable<SudokuField>, Clone
     }
 
     public void setFieldValue(int value) {
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel_pl");
+        if (value > 9 || value < 0) {
+            logger.error(resourceBundle.getString("argument"));
+            throw new SudokuFieldException(resourceBundle.getString("argument"));
+        }
         this.value = value;
     }
 
