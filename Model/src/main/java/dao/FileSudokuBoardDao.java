@@ -3,7 +3,6 @@ package dao;
 import zad2.SudokuBoard;
 
 import java.io.*;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class FileSudokuBoardDao implements Dao<SudokuBoard> {

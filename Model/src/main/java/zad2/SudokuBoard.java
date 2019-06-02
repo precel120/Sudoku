@@ -12,7 +12,6 @@ import java.util.*;
 
 public class SudokuBoard implements Serializable, Cloneable {
     private List<List<SudokuField>> board;
-    private ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel");
 
     public SudokuBoard(SudokuBoard sudoku) {
         board = Arrays.asList(new List[9]);
@@ -104,6 +103,7 @@ public class SudokuBoard implements Serializable, Cloneable {
         return !(containsInRow(row, number) || containsInCol(col, number) || containsInBox(row, col, number));
     }
 
+    //Wypelnia cala plansze zerami i losuje pierwszy rzad
     public void generateBoard() {
         List<Integer> pom = new ArrayList<>();
         for (int i = 0; i < 9; i++) {
@@ -116,14 +116,13 @@ public class SudokuBoard implements Serializable, Cloneable {
     }
 
     public int get(int x, int y) {
-        if (x < 0 || x > 9 || y < 0 || y > 9)
-            throw new SudokuBoardException(resourceBundle.getObject("oob").toString());
+        if (x < 0 || x > 9 || y < 0 || y > 9) throw new SudokuBoardException("liczby poza zakresem");
         return board.get(x).get(y).getFieldValue();
     }
 
     public void set(int x, int y, int value) {
         if (x < 0 || x > 9 || y < 0 || y > 9 || value > 9 || value < 0)
-            throw new SudokuBoardException(resourceBundle.getObject("oob").toString());
+            throw new SudokuBoardException("liczby poza zakresem");
         board.get(x).get(y).setFieldValue(value);
     }
 
@@ -137,7 +136,7 @@ public class SudokuBoard implements Serializable, Cloneable {
     }
 
     public SudokuRow getRow(int y) {
-        if (y > 9 || y < 0) throw new SudokuBoardException(resourceBundle.getObject("oob").toString());
+        if (y > 9 || y < 0) throw new SudokuBoardException("liczba poza zakresem");
         List<SudokuField> sudokuField = Arrays.asList(new SudokuField[9]);
         for (int i = 0; i < 9; i++) {
             sudokuField.set(i, this.board.get(y).get(i));
@@ -147,7 +146,7 @@ public class SudokuBoard implements Serializable, Cloneable {
     }
 
     public SudokuColumn getColumn(int x) {
-        if (x > 9 || x < 0) throw new SudokuBoardException(resourceBundle.getObject("oob").toString());
+        if (x > 9 || x < 0) throw new SudokuBoardException("liczby poza zakresem");
         List<SudokuField> sudokuField = Arrays.asList(new SudokuField[9]);
         for (int i = 0; i < 9; i++) {
             sudokuField.set(i, this.board.get(i).get(x));
@@ -157,7 +156,7 @@ public class SudokuBoard implements Serializable, Cloneable {
     }
 
     public SudokuBox getBox(int row, int col) {
-        if(row>2||row<0||col>2||col<0) throw new SudokuBoardException(resourceBundle.getObject("oob").toString());
+        if(row>2||row<0||col>2||col<0) throw new SudokuBoardException("liczby poza zakresem");
         List<SudokuField> box = Arrays.asList(new SudokuField[9]);
         int index = 0;
         for (int i = 0; i < 3; i++) {
