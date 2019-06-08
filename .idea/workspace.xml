@@ -1,7 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="274672a2-5185-4dc4-8a07-40d6eb516f22" name="Default Changelist" comment="" />
+    <list default="true" id="274672a2-5185-4dc4-8a07-40d6eb516f22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_13_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/db.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/log/log.ctrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/log/log1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/log/logmirror.ctrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c101.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c111.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c121.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c130.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c141.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c150.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c161.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c171.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c180.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c191.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c1a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c1b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c1c0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c1d1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c1e0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c1f1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c200.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c211.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c221.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c230.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c241.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c251.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c260.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c271.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c281.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c290.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c2a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c2b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c2c1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c2d0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c2e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c2f0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c300.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c31.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c311.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c321.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c331.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c340.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c351.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c361.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c371.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c380.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c391.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c3a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c3b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c3c0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c3d1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c3e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c3f1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c400.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c41.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c411.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c421.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c430.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c441.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c451.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c461.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c470.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c481.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c490.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c4a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c51.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c60.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c71.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c81.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/c90.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/ca1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/cb1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/cc0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/cd1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/ce1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/cf0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/seg0/d4b0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Sudoku/service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/derby.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/src/main/java/dao/JdbcSudokuBoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/src/main/java/exceptions/JdbcDaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/3.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Model/3.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/ModelProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Model/ModelProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/dao/FileSudokuBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/dao/FileSudokuBoardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/dao/SudokuBoardDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/dao/SudokuBoardDaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/java/zad2/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/zad2/SudokuBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/resources/langModel.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/resources/langModel.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/main/resources/langModel_pl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/resources/langModel_pl.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/src/test/java/dao/DaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/test/java/dao/DaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/target/classes/dao/FileSudokuBoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/dao/FileSudokuBoardDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/target/classes/dao/SudokuBoardDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/dao/SudokuBoardDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/target/classes/langModel.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/langModel.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/target/classes/langModel_pl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/langModel_pl.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/target/classes/zad2/SudokuBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/classes/zad2/SudokuBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/target/test-classes/dao/DaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Model/target/test-classes/dao/DaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/View.iml" beforeDir="false" afterPath="$PROJECT_DIR$/View/View.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Model/target/" />
     <ignored path="$PROJECT_DIR$/View/target/" />
@@ -14,89 +119,43 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1939734174">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="23" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2607" />
+          <entry key="Properties" value="503" />
+          <entry key="XML" value="47" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/FileSudokuBoardDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/src/main/java/GUI/MenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1819">
-              <caret line="162" column="33" selection-start-line="162" selection-start-column="33" selection-end-line="162" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/1.bin">
-          <provider selected="true" editor-type-id="org.exbin.bined" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/2.bin">
-          <provider selected="true" editor-type-id="org.exbin.bined" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/3.bin">
-          <provider selected="true" editor-type-id="org.exbin.bined" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demoApplication.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-2051" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/src/main/resources/bundles/lang.properties">
-          <provider editor-type-id="ResourceBundle" />
+        <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/JdbcSudokuBoardDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/src/main/resources/bundles/lang_pl.properties">
-          <provider editor-type-id="ResourceBundle" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/src/main/resources/langModel.properties">
-          <provider editor-type-id="ResourceBundle" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/src/main/java/zad2/SudokuSolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="-644">
+              <caret line="50" column="63" lean-forward="true" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,25 +197,35 @@
         <option value="$PROJECT_DIR$/Model/src/main/java/exceptions/SudokuException.java" />
         <option value="$PROJECT_DIR$/View/pom.xml" />
         <option value="$PROJECT_DIR$/Model/src/main/java/exceptions/SudokuReadException.java" />
-        <option value="$PROJECT_DIR$/Model/src/test/java/dao/DaoTest.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/zad2/SudokuBoardTest.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/exceptions/SudokuFieldException.java" />
         <option value="$PROJECT_DIR$/Model/src/test/java/zad2/SudokuFieldTest.java" />
         <option value="$PROJECT_DIR$/View/src/main/java/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/Model/src/main/resources/langModel_pl.properties" />
         <option value="$PROJECT_DIR$/View/src/main/java/GUI/PlanszaController.java" />
         <option value="$PROJECT_DIR$/View/src/main/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/demoApplication.log" />
-        <option value="$PROJECT_DIR$/Model/src/main/resources/langModel.properties" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/zad2/SudokuBoard.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/zad2/SudokuField.java" />
         <option value="$PROJECT_DIR$/Model/src/main/java/zad2/SudokuSolver.java" />
         <option value="$PROJECT_DIR$/View/src/main/resources/bundles/lang.properties" />
         <option value="$PROJECT_DIR$/View/src/main/resources/bundles/lang_pl.properties" />
-        <option value="$PROJECT_DIR$/Model/src/main/java/dao/FileSudokuBoardDao.java" />
         <option value="$PROJECT_DIR$/View/src/main/java/GUI/MenuController.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/dao/FileSudokuBoardDao.java" />
+        <option value="$PROJECT_DIR$/Model/pom.xml" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/zad2/SudokuBoard.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/exceptions/JdbcDaoException.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/resources/langModel.properties" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/dao/SudokuBoardDaoFactory.java" />
+        <option value="$PROJECT_DIR$/Model/src/main/resources/langModel_pl.properties" />
+        <option value="$PROJECT_DIR$/Model/src/main/java/dao/JdbcSudokuBoardDao.java" />
+        <option value="$PROJECT_DIR$/Model/src/test/java/dao/DaoTest.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -166,9 +235,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="975" />
-    <option name="height" value="1049" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -176,36 +245,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -213,136 +280,67 @@
             </path>
             <path>
               <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
+              <item name="prokom_2019_lch_pn_08_01" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zad2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource Bundle 'langModel'" type="a6c14932:ResourceBundleNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="bundles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SudokuGameProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KOMPOCIK" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="bundles" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource Bundle 'lang'" type="a6c14932:ResourceBundleNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559488179174" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prokom_2019_lch_pn_08_01-master@31f5f3df793 (1)" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559995186235" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SudokuGame-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -368,7 +366,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Gui">
+  <component name="RunManager" selected="JUnit.DaoTest.miniTest">
     <configuration name="Gui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.Gui" />
       <module name="View" />
@@ -382,80 +380,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuColumnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zad2.*" />
+          <option name="PATTERN" value="dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zad2" />
-      <option name="MAIN_CLASS_NAME" value="zad2.SudokuColumnTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.DaoTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuFieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaoTest.miniTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zad2.*" />
+          <option name="PATTERN" value="dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zad2" />
-      <option name="MAIN_CLASS_NAME" value="zad2.SudokuFieldTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.DaoTest" />
+      <option name="METHOD_NAME" value="miniTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuRowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DaoTest.readAndWriteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zad2.*" />
+          <option name="PATTERN" value="dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zad2" />
-      <option name="MAIN_CLASS_NAME" value="zad2.SudokuRowTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.DaoTest" />
+      <option name="METHOD_NAME" value="readAndWriteTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuSolverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="daoFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zad2.*" />
+          <option name="PATTERN" value="dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zad2" />
-      <option name="MAIN_CLASS_NAME" value="zad2.SudokuSolverTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.daoFactoryTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SudokuColumnTest" />
-      <item itemvalue="JUnit.SudokuFieldTest" />
-      <item itemvalue="JUnit.SudokuRowTest" />
-      <item itemvalue="JUnit.SudokuSolverTest" />
       <item itemvalue="Application.Gui" />
+      <item itemvalue="JUnit.DaoTest.miniTest" />
+      <item itemvalue="JUnit.DaoTest.readAndWriteTest" />
+      <item itemvalue="JUnit.DaoTest" />
+      <item itemvalue="JUnit.daoFactoryTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DaoTest.miniTest" />
+        <item itemvalue="JUnit.daoFactoryTest" />
+        <item itemvalue="JUnit.DaoTest" />
+        <item itemvalue="JUnit.DaoTest.readAndWriteTest" />
         <item itemvalue="Application.Gui" />
-        <item itemvalue="JUnit.SudokuSolverTest" />
-        <item itemvalue="JUnit.SudokuRowTest" />
-        <item itemvalue="JUnit.SudokuFieldTest" />
-        <item itemvalue="JUnit.SudokuColumnTest" />
       </list>
     </recent_temporary>
   </component>
@@ -483,6 +481,9 @@
       <workItem from="1559484126849" duration="594000" />
       <workItem from="1559484741639" duration="3210000" />
       <workItem from="1559489156265" duration="13503000" />
+      <workItem from="1559905163376" duration="4843000" />
+      <workItem from="1559912433939" duration="1260000" />
+      <workItem from="1559989019099" duration="6235000" />
     </task>
     <task id="LOCAL-00001" summary="zad 10 nieco lepiej">
       <created>1558802676375</created>
@@ -509,44 +510,44 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DaoTest - 2019.06.02 at 16h 58m 23s.xml">
+    <history-entry file="DaoTest_miniTest - 2019.06.08 at 13h 31m 57s.xml">
+      <configuration name="DaoTest.miniTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoTest_miniTest - 2019.06.08 at 13h 32m 13s.xml">
+      <configuration name="DaoTest.miniTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoTest_miniTest - 2019.06.08 at 13h 32m 54s.xml">
+      <configuration name="DaoTest.miniTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoTest_miniTest - 2019.06.08 at 13h 37m 38s.xml">
+      <configuration name="DaoTest.miniTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoTest_miniTest - 2019.06.08 at 13h 54m 16s.xml">
+      <configuration name="DaoTest.miniTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DaoTest - 2019.06.08 at 13h 58m 12s.xml">
       <configuration name="DaoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SudokuBoardTest - 2019.06.02 at 17h 01m 59s.xml">
-      <configuration name="SudokuBoardTest" configurationId="JUnit" />
+    <history-entry file="daoFactoryTest - 2019.06.08 at 13h 58m 16s.xml">
+      <configuration name="daoFactoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest - 2019.06.02 at 17h 02m 11s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
+    <history-entry file="DaoTest_miniTest - 2019.06.08 at 13h 58m 25s.xml">
+      <configuration name="DaoTest.miniTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest - 2019.06.02 at 17h 02m 19s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
+    <history-entry file="DaoTest_miniTest - 2019.06.08 at 13h 59m 05s.xml">
+      <configuration name="DaoTest.miniTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest - 2019.06.02 at 17h 02m 22s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.06.02 at 17h 02m 26s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuBoardTest - 2019.06.02 at 17h 02m 30s.xml">
-      <configuration name="SudokuBoardTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest - 2019.06.02 at 17h 05m 08s.xml">
-      <configuration name="DaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuBoardTest - 2019.06.02 at 17h 05m 15s.xml">
-      <configuration name="SudokuBoardTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SudokuFieldTest - 2019.06.02 at 17h 05m 19s.xml">
-      <configuration name="SudokuFieldTest" configurationId="JUnit" />
+    <history-entry file="DaoTest_miniTest - 2019.06.08 at 13h 59m 37s.xml">
+      <configuration name="DaoTest.miniTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41359000" />
+    <option name="totallyTimeSpent" value="53697000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16040269" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12708333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -556,16 +557,16 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932885" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4919463" weight="0.28186968" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49798658" weight="0.398017" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4919463" visible="true" weight="0.28072035" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49798658" weight="0.3940678" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5080537" side_tool="true" visible="true" weight="0.28186968" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49395972" weight="0.3243626" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5080537" side_tool="true" weight="0.284492" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49395972" weight="0.3230932" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -614,6 +615,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="zad 10 nieco lepiej" />
@@ -680,18 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/dao/daoFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2227" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -703,27 +695,10 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/main/java/exceptions/SudokuReadException.java" />
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/test/java/zad2/SudokuBoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="133" selection-start-line="133" selection-end-line="135" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/test/java/dao/DaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -731,9 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,9 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="82" column="11" lean-forward="true" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -773,10 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/SudokuBoardDaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/src/main/java/GUI/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -801,30 +759,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/langModel_pl.properties">
-      <provider editor-type-id="ResourceBundle" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/main/java/zad2/BacktrackingSudokuSolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/zad2/SudokuBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="176" column="8" lean-forward="true" selection-start-line="176" selection-start-column="8" selection-end-line="176" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6803#6804#0" expanded="true" />
-            <element signature="e#6849#6850#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,6 +809,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Model/1.bin" />
+    <entry file="file://$PROJECT_DIR$/Model/2.bin" />
+    <entry file="file://$PROJECT_DIR$/Model/3.bin" />
+    <entry file="file://$PROJECT_DIR$/View/src/main/resources/bundles/lang.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/main/resources/bundles/lang_pl.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/main/java/zad2/SudokuSolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -878,62 +835,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/resources/bundles/lang.properties">
-      <provider editor-type-id="ResourceBundle" />
+    <entry file="file://$PROJECT_DIR$/View/src/main/java/GUI/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="596">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/resources/bundles/lang_pl.properties">
-      <provider editor-type-id="ResourceBundle" />
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/AutoCloseable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/derby.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/database/README_DO_NOT_TOUCH_FILES.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1222">
+          <caret line="146" column="21" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/zad2/SudokuBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="198" column="39" selection-start-line="198" selection-start-column="39" selection-end-line="198" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoApplication.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/FileSudokuBoardDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/exceptions/JdbcDaoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/SudokuBoardDaoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/resources/langModel_pl.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/src/main/resources/langModel.properties">
       <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/FileSudokuBoardDao.java">
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/dao/daoFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="323">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/test/java/dao/DaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/src/main/java/dao/JdbcSudokuBoardDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644">
+          <caret line="50" column="63" lean-forward="true" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/main/java/GUI/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="162" column="33" selection-start-line="162" selection-start-column="33" selection-end-line="162" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/1.bin">
-      <provider selected="true" editor-type-id="org.exbin.bined" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/2.bin">
-      <provider selected="true" editor-type-id="org.exbin.bined" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/3.bin">
-      <provider selected="true" editor-type-id="org.exbin.bined" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoApplication.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-2051" />
       </provider>
     </entry>
   </component>
