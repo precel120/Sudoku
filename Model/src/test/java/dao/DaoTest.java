@@ -1,14 +1,11 @@
 package dao;
 
-import org.junit.Rule;
+import exceptions.JdbcDaoException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.rules.ExpectedException;
 import zad2.BacktrackingSudokuSolver;
 import zad2.SudokuBoard;
 import zad2.SudokuSolver;
-
-import java.io.IOException;
 
 public class DaoTest {
 
@@ -32,5 +29,22 @@ public class DaoTest {
                 Assertions.assertEquals(sudokuBoardTest.get(i, j), sudokuBoard1.get(i, j));
             }
         }
+    }
+
+    @Test
+    public void jdbcTest() {
+        SudokuBoard sudokuBoard = new SudokuBoard();
+        BacktrackingSudokuSolver backtrackingSudokuSolver = new BacktrackingSudokuSolver();
+        sudokuBoard.generateBoard();
+        backtrackingSudokuSolver.solve(sudokuBoard);
+        JdbcSudokuBoardDao jdbcSudokuBoardDao = null;
+        try {
+            jdbcSudokuBoardDao = new JdbcSudokuBoardDao("testFile");
+        } catch (JdbcDaoException e) {
+            e.printStackTrace();
+        }
+        jdbcSudokuBoardDao.write(sudokuBoard);
+        SudokuBoard sudokuBoard1 = jdbcSudokuBoardDao.read();
+        Assertions.assertEquals(sudokuBoard, sudokuBoard1);
     }
 }

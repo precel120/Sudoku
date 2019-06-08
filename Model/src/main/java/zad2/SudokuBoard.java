@@ -189,6 +189,16 @@ public class SudokuBoard implements Serializable, Cloneable {
         return new SudokuBox(box);
     }
 
+    public String stringOfFields(){
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                stringBuilder.append(board.get(i).get(j));
+            }
+        }
+        return stringBuilder.toString();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

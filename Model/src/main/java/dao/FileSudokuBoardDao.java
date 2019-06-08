@@ -8,9 +8,9 @@ import java.util.ResourceBundle;
 import org.apache.log4j.Logger;
 
 public class FileSudokuBoardDao implements Dao<SudokuBoard> {
+
     private String fileName;
-   // private ResourceBundle resourceBundle = ResourceBundle.getBundle("langModel_pl");
-   final static Logger logger = Logger.getLogger(FileSudokuBoardDao.class);
+    final static Logger logger = Logger.getLogger(FileSudokuBoardDao.class);
 
     public FileSudokuBoardDao(String fileName) {
         this.fileName = fileName;
@@ -45,19 +45,15 @@ public class FileSudokuBoardDao implements Dao<SudokuBoard> {
             logger.debug(bundle.getString("readBoard"));
             return sudokuBoard;
         } catch (EOFException ex) {
-           // System.out.print(resourceBundle.getObject("endFile"));
             logger.error(bundle.getString("endFile"), ex);
             ex.getCause();
         }catch (IOException ioe){
-          ///  System.out.print(resourceBundle.getObject("ioe"));
             logger.error(bundle.getString("ioe"), ioe);
             ioe.getCause();
         }catch (ClassNotFoundException cnfe){
-           // System.out.print(resourceBundle.getObject("klass"));
             logger.error(bundle.getString("klass"), cnfe);
             cnfe.getCause();
         }
-        //resourceBundle.getString("nullPointer")
         throw new NullPointerException(bundle.getString("nullPointer"));
     }
 

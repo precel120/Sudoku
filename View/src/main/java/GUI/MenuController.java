@@ -1,6 +1,7 @@
 package GUI;
 
-import dao.FileSudokuBoardDao;
+import dao.JdbcSudokuBoardDao;
+import exceptions.JdbcDaoException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,7 +19,7 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 
-public class MenuController  {
+public class MenuController {
 
     private static SudokuBoard sudokuBoard = new SudokuBoard();
 
@@ -123,9 +124,9 @@ public class MenuController  {
     }
 
     @FXML
-    public void wczytaj(){
-        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("gra.bin");
-        sudokuBoard = fileSudokuBoardDao.read();
+    public void wczytaj() throws JdbcDaoException {
+        JdbcSudokuBoardDao jdbcDao = new JdbcSudokuBoardDao("boardFile");
+        sudokuBoard = jdbcDao.read();
     }
 
     @FXML
@@ -138,7 +139,7 @@ public class MenuController  {
     }
 
     @FXML
-    public void eng(){
+    public void eng() {
         Locale.setDefault(new Locale("en"));
         ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
         logger.info(bundle.getString("languageChanged"));
@@ -146,14 +147,14 @@ public class MenuController  {
     }
 
     @FXML
-    public void pl(){
+    public void pl() {
         Locale.setDefault(new Locale("pl"));
         ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");
         logger.info(bundle.getString("languageChanged"));
         loadMenu();
     }
 
-    public void loadMenu(){
+    public void loadMenu() {
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/MenuScreen.fxml"));
         fxmlLoader.setResources(ResourceBundle.getBundle("bundles.lang"));
         ResourceBundle bundle = ResourceBundle.getBundle("bundles.lang");

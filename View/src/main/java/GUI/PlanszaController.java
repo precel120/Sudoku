@@ -1,6 +1,7 @@
 package GUI;
 
-import dao.FileSudokuBoardDao;
+import dao.JdbcSudokuBoardDao;
+import exceptions.JdbcDaoException;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -39,10 +40,9 @@ public class PlanszaController {
     }
 
     @FXML
-    public void zapisz() {
-        FileSudokuBoardDao fileSudokuBoardDao = new FileSudokuBoardDao("gra.bin");
-        fileSudokuBoardDao.write(sudokuBoard);
-        //logger.info(bundle.getString("saved"));
+    public void zapisz() throws JdbcDaoException {
+        JdbcSudokuBoardDao jdbcDao = new JdbcSudokuBoardDao("boardFile");
+        jdbcDao.write(sudokuBoard);
     }
 
     @FXML

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Jun 08 18:39:50 CEST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-016b-37f5-e3fc-000005fba478 
+on database directory C:\Users\Jasiek\Desktop\prokom_2019_lch_pn_08_01-master@832c161c5c2\Sudoku with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Users/Jasiek/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_201-b09
+user.dir=C:\Users\Jasiek\Desktop\prokom_2019_lch_pn_08_01-master@832c161c5c2
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
